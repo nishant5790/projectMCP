@@ -6,6 +6,10 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "beeai-framework>=0.1.16",
+    "langchain-mcp-adapters>=0.0.9",
+    "langchain-openai>=0.3.14",
+    "langchain[all]>=0.3.23",
+    "langgraph>=0.3.31",
     "mcp[cli]>=1.6.0",
     "pandas>=2.2.3",
 ]

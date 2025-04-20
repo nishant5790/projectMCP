@@ -13,7 +13,11 @@ def add(a: int, b: int) -> int:
 
 
 # Add a dynamic greeting resource
-@mcp.resource("greeting://{name}")
-def get_greeting(name: str) -> str:
-    """Get a personalized greeting"""
-    return f"Hello, {name}!"
+# @mcp.resource("greeting://{name}")
+# def get_greeting(name: str) -> str:
+#     """Get a personalized greeting"""
+#     return f"Hello, {name}!"
+
+if __name__ == "__main__":
+    # Run the server
+    mcp.run(transport='stdio')
