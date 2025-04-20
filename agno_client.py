@@ -24,7 +24,8 @@ async def run_agent(message: str) -> None:
             model=OpenAIChat(id="gpt-4o"),
             tools=[mcp_tools],
             instructions=dedent("""\
-                You are a math expert in adding numbers
+                You are a math expert. You can use the tools to perform calculations.
+                
             """),
             markdown=True,
             show_tool_calls=True,
