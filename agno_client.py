@@ -40,4 +40,4 @@ if __name__ == "__main__":
     # Basic example - exploring project license
     # asyncio.run(run_agent("What is the value of (5-10)*10+5*2?"))
     # Example usage with math server
-    asyncio.run(run_agent("What is the average of 1,2,3,4,5,6,7,8,9,10"))
+    asyncio.run(run_agent("is 13 a prime number?"))
