@@ -25,7 +25,7 @@ async def run_agent(message: str) -> None:
             tools=[mcp_tools],
             instructions=dedent("""\
                 You are a math expert. You can use the tools to perform calculations.
-                
+
             """),
             markdown=True,
             show_tool_calls=True,
@@ -38,4 +38,6 @@ async def run_agent(message: str) -> None:
 # Example usage
 if __name__ == "__main__":
     # Basic example - exploring project license
-    asyncio.run(run_agent("What is the value of (5+10)*10-5?"))
+    # asyncio.run(run_agent("What is the value of (5-10)*10+5*2?"))
+    # Example usage with math server
+    asyncio.run(run_agent("What is the average of 1,2,3,4,5,6,7,8,9,10"))
