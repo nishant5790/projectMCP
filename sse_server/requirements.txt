@@ -29,3 +29,6 @@ uv==0.6.6
 uvicorn==0.34.0
 websockets==14.2
 wheel==0.45.1
+langchain-mcp-adapters
+langgraph
+langchain-openai
